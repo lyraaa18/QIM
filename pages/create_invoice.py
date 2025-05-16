@@ -64,11 +64,6 @@ class CreateInvoicePage(ttk.Frame):
         middle_panel = ttk.LabelFrame(main_frame, text="Watermark", padding=10)
         middle_panel.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
         
-        ttk.Label(
-            middle_panel,
-            text="Using default watermark.png"
-        ).pack(pady=10)
-        
         self.watermark_canvas = tk.Canvas(middle_panel, width=200, height=200, bg="#f0f0f0")
         self.watermark_canvas.pack(pady=10)
         
@@ -168,7 +163,7 @@ class CreateInvoicePage(ttk.Frame):
         return True
     
     def load_default_watermark(self):
-        watermark_path = "watermark.png"
+        watermark_path = "./assets/images/watermark.png"
         if os.path.exists(watermark_path):
             self.watermark_img = cv2.imread(watermark_path)
             self.watermark_img = cv2.cvtColor(self.watermark_img, cv2.COLOR_BGR2RGB)
