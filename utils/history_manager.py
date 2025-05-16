@@ -1,6 +1,3 @@
-"""
-Utilities for managing invoice history
-"""
 import os
 import json
 import datetime

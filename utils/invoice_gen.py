@@ -30,7 +30,7 @@ def generate_invoice(recipient_name="Client Name", items=None):
     draw.text((50, 90), f"No. Invoice: {invoice_number}", fill="black", font=font_medium)
     draw.text((50, 120), f"Tanggal: {datetime.datetime.now().strftime('%d-%m-%Y')}", fill="black", font=font_medium)
     
-    draw.text((width-250, 50), "Qimchi Furniture", fill="black", font=font_medium)
+    draw.text((width-250, 50), "SealPay Furniture", fill="black", font=font_medium)
     draw.text((width-250, 80), "Jl. Merdeka No. 123", fill="black", font=font_small)
     draw.text((width-250, 100), "Tasikmalaya, Jawa Barat", fill="black", font=font_small)
     draw.text((width-250, 120), "Telp: (0265) 1234567", fill="black", font=font_small)
