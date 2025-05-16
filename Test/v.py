@@ -12,15 +12,13 @@ class WatermarkApp:
         self.root = root
         self.root.title("QIM Watermarking App")
         self.root.geometry("1000x700")
-        
-        # Initialize image variables
+
         self.cover_image = None
         self.watermark_image = None
         self.watermarked_image = None
         self.extracted_watermark = None
         
-        # QIM parameters
-        self.delta = 30  # Quantization step size
+        self.delta = 30 
         
         self.create_widgets()
     
@@ -50,7 +48,7 @@ class WatermarkApp:
         # Delta parameter
         ttk.Label(self.param_frame, text="Delta (Strength):").grid(row=0, column=0, padx=5, pady=5)
         self.delta_scale = ttk.Scale(self.param_frame, from_=5, to=50, orient=tk.HORIZONTAL,
-                                   length=200, value=self.delta, command=self.update_delta)
+        length=200, value=self.delta, command=self.update_delta)
         self.delta_scale.grid(row=0, column=1, padx=5, pady=5)
         self.delta_label = ttk.Label(self.param_frame, text=f"{self.delta}")
         self.delta_label.grid(row=0, column=2, padx=5, pady=5)
