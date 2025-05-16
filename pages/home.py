@@ -22,7 +22,7 @@ class HomePage(ttk.Frame):
         
         ttk.Label(
             header,
-            text="Qimchi - Invoice Watermarking System",
+            text="SealPay - Invoice Watermarking System",
             font=("Helvetica", 24, "bold"),
             style="Primary.TLabel"
         ).pack(pady=20)
