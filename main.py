@@ -11,7 +11,7 @@ class WatermarkApp(tk.Tk):
     def __init__(self):
         super().__init__()
         
-        self.title("Qimchi")
+        self.title("SealPay")
         self.geometry("1200x800")
         self.minsize(1000, 700)
         
@@ -100,7 +100,7 @@ class WatermarkApp(tk.Tk):
         
         logo_label = ttk.Label(
             title_frame,
-            text="Qimchi",
+            text="SealPay ",
             font=('Segoe UI', 14, 'bold'),
             foreground=self.colors["text_light"],
             background=self.colors["primary"]
@@ -139,7 +139,7 @@ class WatermarkApp(tk.Tk):
             
         self.current_page = page_name
         title = page_name.replace('Page', '')
-        self.title(f"Qimchi - {title}")
+        self.title(f"SealPay  - {title}")
         
         for widget in self.nav_bar.winfo_children():
             if isinstance(widget, ttk.Frame):
